@@ -1,5 +1,5 @@
 <ion-content class="home" padding>
-  <ion-grid *ngIf="weather">
+  <ion-grid *ngIf="weather;else other">
     <ion-row>  
       <ion-col>
         <h2 class="location">
@@ -38,4 +38,16 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  <ng-template #other>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-100>
+          <div class="overcard">
+            <p class="text-center"><strong>Getting Data ...</strong> </p>
+            <p>If this take too long time, Please make sure you are connected to the internet and You have entered the data correctly</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ng-template>
 </ion-content>
