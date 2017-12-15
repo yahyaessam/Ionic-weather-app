@@ -11,10 +11,30 @@
        <h2 class="location"> {{ weather.display_location.full }} </h2>
        <div class="icon"> <img src="{{ weather.icon_url}}" alt=""> </div>
        <h2 class="temp"> {{ weather.temp_c }} &deg; </h2>
-       <p> {{ weather.weather }} </p>
-       <h2 class="wind"><strong>Wind Direction:</strong> {{ weather.wind_dir }}</h2>
+       <p class="weather"> {{ weather.weather }} </p>
      </ion-col>
-    
    </ion-row>
+   <ion-row>
+     <ion-col width-100><h2 class="margin-top text-center"> Details </h2></ion-col>
+    </ion-row>
+   <ion-row>
+    
+    <ion-col width-100>
+        <ion-list>
+          <ion-item>
+            <strong>Wind Direction: </strong> {{ weather.wind_dir }}
+          </ion-item>
+           <ion-item>
+            <strong>Relative Humidity </strong> {{ weather.relative_humidity}}
+          </ion-item>
+          <ion-item>
+            <strong>Time Zone: </strong> {{ weather.local_tz_long}}
+          </ion-item>
+          <ion-item>
+             {{ weather.observation_time}}
+          </ion-item>
+        </ion-list>
+      </ion-col>
+  </ion-row>
  </ion-grid>
 </ion-content>

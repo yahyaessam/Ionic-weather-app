@@ -38,24 +38,30 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  overlay:    rgba(0,0,0,.4),
+  opacity:    rgba(238,238,238,.6)
 );
 
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
-
-
+$list-ios-header-color:color($colors,light);
+$list-ios-header-background-color:color($colors, overlay);
+$list-ios-header-font-weight:700;
+$list-ios-header-font-size:1.6rem;
+$list-inset-ios-border-radius:10px;
+$list-inset-ios-margin-top:30px;
+$list-ios-background-color:color($colors, overlay);
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
-
-
-
+$list-md-header-font-size:1.6rem;
+$list-md-header-color:color($colors,light);
+$list-md-header-font-weight:700;
+$list-md-background-color:color($colors, overlay);
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here

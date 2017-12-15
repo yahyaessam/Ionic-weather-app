@@ -5,6 +5,7 @@ page-home {
         text-align:center;
         font-weight:bold;
         word-spacing:-18px;
+        margin:10px 0 5px;
     }
     .icon {
         text-align:center;
@@ -12,12 +13,25 @@ page-home {
     }
     .location {
         text-align:center;
-        font-size:17px;
+        font-size:14px;
         text-transform:capitalize;
+        margin-bottom:35px;
+        word-spacing:4px;
+    }
+    .weather {
+        margin-bottom:40px;
+        font-weight:bold;
+        letter-spacing:.6px;
     }
     p {
         text-align:center;
         font-size:16px;
+    }
+    ion-item {
+        color:#fff !important;
+        font-weight:bold;
+        font-size:14px !important;
+        border-bottom:1px solid rgba(0,0,0,.4) !important;
     }
 
 
