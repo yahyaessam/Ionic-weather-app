@@ -1,40 +1,41 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content class="home" padding>
- <ion-grid *ngIf="weather">
-   <ion-row>  
-     <ion-col>
-       <h2 class="location"> {{ weather.display_location.full }} </h2>
-       <div class="icon"> <img src="{{ weather.icon_url}}" alt=""> </div>
-       <h2 class="temp"> {{ weather.temp_c }} &deg; </h2>
-       <p class="weather"> {{ weather.weather }} </p>
-     </ion-col>
-   </ion-row>
-   <ion-row>
-     <ion-col width-100><h2 class="margin-top text-center"> Details </h2></ion-col>
+  <ion-grid *ngIf="weather">
+    <ion-row>  
+      <ion-col>
+        <h2 class="location">
+           {{ weather.display_location.full }}
+        </h2>
+        <div class="icon">
+           <img src="{{ weather.icon_url}}" alt="">
+        </div>
+        <h2 class="temp">
+           {{ weather.temp_c }} &deg;
+        </h2>
+        <p class="weather">
+           {{ weather.weather }} 
+        </p>
+      </ion-col>
     </ion-row>
-   <ion-row>
-    
-    <ion-col width-100>
+    <ion-row>
+      <ion-col width-100><h2 class="margin-top text-center"> Details </h2></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-100>
         <ion-list>
           <ion-item>
-            <strong>Wind Direction: </strong> {{ weather.wind_dir }}
-          </ion-item>
-           <ion-item>
-            <strong>Relative Humidity </strong> {{ weather.relative_humidity}}
+            <strong>Wind Direction: </strong>&nbsp; &nbsp; &nbsp; &nbsp; {{ weather.wind_dir }}
           </ion-item>
           <ion-item>
-            <strong>Time Zone: </strong> {{ weather.local_tz_long}}
+            <strong>Relative Humidity: </strong>&nbsp; &nbsp; {{ weather.relative_humidity}}
           </ion-item>
           <ion-item>
-             {{ weather.observation_time}}
+            <strong>Time Zone: </strong>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; {{ weather.local_tz_long}}
+          </ion-item>
+          <ion-item text-wrap class="text-center">
+          {{ weather.observation_time}}
           </ion-item>
         </ion-list>
       </ion-col>
-  </ion-row>
- </ion-grid>
+    </ion-row>
+  </ion-grid>
 </ion-content>

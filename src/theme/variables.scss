@@ -1,37 +1,10 @@
-// Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/theming/
 
-// Font path is used to include ionicons,
-// roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
-
-// The app direction is used to include
-// rtl styles in your app. For more info, please see:
-// http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
 
 @import "ionic.globals";
-
-
-// Shared Variables
-// --------------------------------------------------
-// To customize the look and feel of this app, you can override
-// the Sass variables found in Ionic's source scss files.
-// To view all the possible Ionic variables, see:
-// http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
-
-// Named Color Variables
-// --------------------------------------------------
-// Named colors makes it easy to reuse colors on various components.
-// It's highly recommended to change the default colors
-// to match your app's branding. Ionic uses a Sass map of
-// colors so you can add, rename and remove colors as needed.
-// The "primary" color is the only required color in the map.
 
 $colors: (
   primary:    #488aff,
@@ -40,13 +13,10 @@ $colors: (
   light:      #f4f4f4,
   dark:       #222,
   overlay:    rgba(0,0,0,.4),
-  opacity:    rgba(238,238,238,.6)
+  opacity:    rgba(238,238,238,.6),
+  sky:        skyblue
 );
 
-
-// App iOS Variables
-// --------------------------------------------------
-// iOS only Sass variables can go here
 $list-ios-header-color:color($colors,light);
 $list-ios-header-background-color:color($colors, overlay);
 $list-ios-header-font-weight:700;
@@ -54,41 +24,17 @@ $list-ios-header-font-size:1.6rem;
 $list-inset-ios-border-radius:10px;
 $list-inset-ios-margin-top:30px;
 $list-ios-background-color:color($colors, overlay);
+$tabs-ios-tab-color-inactive:color($colors, light);
 
-// App Material Design Variables
-// --------------------------------------------------
-// Material Design only Sass variables can go here
 $list-md-header-font-size:1.6rem;
 $list-md-header-color:color($colors,light);
 $list-md-header-font-weight:700;
 $list-md-background-color:color($colors, overlay);
-// App Windows Variables
-// --------------------------------------------------
-// Windows only Sass variables can go here
+$tabs-md-tab-color-inactive:color($colors, light);
 
-
-
-
-// App Theme
-// --------------------------------------------------
-// Ionic apps can have different themes applied, which can
-// then be future customized. This import comes last
-// so that the above variables are used and Ionic's
-// default are overridden.
+$tabs-background:color($colors, overlay);
 
 @import "ionic.theme.default";
-
-
-// Ionicons
-// --------------------------------------------------
-// The premium icon font for Ionic. For more info, please see:
-// http://ionicframework.com/docs/ionicons/
-
 @import "ionic.ionicons";
-
-
-// Fonts
-// --------------------------------------------------
-
 @import "roboto";
 @import "noto-sans";
