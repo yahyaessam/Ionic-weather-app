@@ -12,6 +12,9 @@ export class WeatherProvider {
     console.log(this.url);
   }
 
+autoWeather(){
+  return this.http.get("http://api.wunderground.com/api/43194c82d27c92e4/geolookup/q/autoip.json").map( res => res.json());
+}
 getWeather(city, state) {
   return this.http.get(this.url+"/"+state+"/"+city+".json").map(res => res.json());
 }

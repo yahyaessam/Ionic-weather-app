@@ -14,5 +14,17 @@
 
 
 <ion-content class="home" padding>
+  <h2> Location Settings </h2>
+  <form (ngSubmit)="saveForm()">
+    <ion-item>
+      <ion-label>Country</ion-label>
+      <ion-input type="text" [(ngModel)]="state" name="state"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>City</ion-label>
+      <ion-input type="text" [(ngModel)]="city" name="city"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block>Save Location</button>
+  </form>
 
 </ion-content>

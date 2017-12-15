@@ -10,8 +10,9 @@
      <ion-col>
        <h2 class="location"> {{ weather.display_location.full }} </h2>
        <div class="icon"> <img src="{{ weather.icon_url}}" alt=""> </div>
-        <h2 class="location"> {{ weather.temp_f }} &deg; </h2>
-         <h2 class="location"> {{ weather.temperature_string }} </h2>
+       <h2 class="temp"> {{ weather.temp_c }} &deg; </h2>
+       <p> {{ weather.weather }} </p>
+       <h2 class="wind"><strong>Wind Direction:</strong> {{ weather.wind_dir }}</h2>
      </ion-col>
     
    </ion-row>
