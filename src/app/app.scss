@@ -14,3 +14,14 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.home {
+    background-image:url(../../../assets/imgs/bg.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    color:#fff;
+    margin-top:25px;
+    background-color:#666;
+    background-blend-mode: overlay;
+    font-family: 'Raleway', sans-serif;
+}
