@@ -15,7 +15,7 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 .home {
-    background-image:url(../../../assets/imgs/bg.jpg);
+    background-image:url(../assets/imgs/bg.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
@@ -25,6 +25,7 @@
     background-blend-mode: overlay;
     font-family: 'Raleway', sans-serif;
 }
+
  ion-item {
         color:#fff !important;
         font-weight:bold;
@@ -38,4 +39,10 @@
         text-align:center;
         
     }
-    
+    ion-nav {
+        background-color:rgba(0,0,0,.7) !important;
+        top:-25px;
+        height:104%;
+
+    }
+   
